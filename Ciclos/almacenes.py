@@ -1,4 +1,5 @@
 peluches = ["Perrote", "Gaturrio", "Mangote"]
+nombre = ""
 opcion = 0
 
 print("Pelucheria PELUCHOTES")
@@ -13,9 +14,12 @@ while opcion != 5:
     opcion = int(input("Ingrese un numero: "))
 
     if opcion == 1:
-        print("Usted está en la opcion 1")
+        nombre = input("Digita el nombre del producto: ")
+        #Agregando datos a una lista
+        peluches.append(nombre)
+        print("Peluche agregado..")
     elif opcion == 2:
-        print("Usted está en la opcion 2")
+        print(peluches)
     elif opcion == 3:
         print("Usted está en la opcion 3")
     elif opcion == 4:
