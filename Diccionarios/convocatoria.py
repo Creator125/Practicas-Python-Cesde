@@ -9,7 +9,7 @@ print("5. Editar información")
 print("6. Retirar invitados")
 print("***************")
 
-opcion = 1
+opcion = int(input("Ingrese una opcion: "))
 usuarios = []
 
 while opcion != 0:
@@ -28,9 +28,11 @@ while opcion != 0:
     elif opcion == 2:
         #Recorriendo una lista
         for persona in usuarios:
-            print(persona["Nombre"])
+            print(f"persona: {persona['nombre']}")
     elif opcion == 3:
-        pass
+        for persona in usuarios:
+            if persona["estado"] == True:
+                print(persona)
     elif opcion == 4:
         pass
     elif opcion == 5:
