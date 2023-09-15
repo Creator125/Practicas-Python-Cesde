@@ -45,7 +45,7 @@ while opcion != 0:
         idAgrupacion = input("Ingrese el id de la agrupación cuya hora de presentación desea cambiar: ")
         
         for banda in grupos:
-            if banda["id"] == idAgrupacion and banda["estado"] == False:
+            if banda["id"] == idAgrupacion and banda["estado"] == 0:
                 nueva_hora = input("Ingrese la nueva hora de presentación: ")
                 banda["horaPresentacion"] = nueva_hora
                 print(f"La hora de presentación de {idAgrupacion} se ha actualizado a {nueva_hora}.")
@@ -56,7 +56,7 @@ while opcion != 0:
         idAgrupacion = int(input("Ingrese el id de la agrupacion a eliminar: "))
         
         for banda in grupos:
-            if banda["id"] == idAgrupacion and banda["estado"] == False:
+            if banda["id"] == idAgrupacion and banda["estado"] == 0:
                 grupos.remove(banda)
                 
                 print(f"Agrupación con ID {idAgrupacion} eliminada.")
@@ -64,4 +64,4 @@ while opcion != 0:
                 print(f"No se encontró la agrupación con ID {idAgrupacion} o ya se ha presentado.")
             
     else:
-        pass
+        print("Opcion invalida")
