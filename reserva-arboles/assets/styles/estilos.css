@@ -1,3 +1,23 @@
+:root{
+    --verde-natural: rgb(55, 124, 57);
+    --verde-oscuro: rgb(18, 90, 20);
+    --verde-claro: rgb(168, 216, 123);
+    --azul-agua: rgb(90, 169, 214);
+    --marron-tierra: rgb(151, 101, 75);
+    --gris-claro: rgb(231, 231, 231);
+}
+
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400; /* Puedes ajustar el peso según lo necesites */
+    src: url('../fonts/Poppins-Regular.ttf'); 
+}
+
+*{
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+}
+
 .banner{
     background: url("../img/banner.jpg") fixed;
     background-size: cover;
@@ -42,6 +62,15 @@
 
 .columnaDashboard{
     height: 100vh;
+    background-color: var(--verde-natural);
+}
+
+.columnaDashboard div{
+    transition: background-color 0.7s;
+}
+
+.columnaDashboard div:hover{
+    background-color: var(--verde-oscuro);
 }
 
 .bg-aqua{
@@ -54,4 +83,8 @@
 
 .bg-lite-green{
     background-color: #96ff81;
+}
+
+.bg-verde-main{
+    background-color: var(--verde-natural);
 }
