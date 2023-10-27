@@ -24,13 +24,15 @@ tipoArboles = ["Cedro americano", "Cocotero", "Mango", "Caimito", "Heno",
                 "Palma canaria", "Jagua", "Yaca", "Marañón", "Samán", 
                 "Chocho", "Ébano", "Acacia amarilla", "Acacias Roja", 
                 "Guayabillo", "Caobas", "Yarumo", "Cámbulo", "Caracolí",
-                "Casco de vaca", "Búcaro", "Guayacán amarillo", "Balso"]
+                "Casco de vaca", "Búcaro", "Guayacán amarillo", "Balso", "Guayacán",
+                "Guayacán Rosado", "Cerezo de montaña", "Pino colombiano", "Laurel de cera",
+                "Arrayán", "Palma de cera", "Aliso", "Roble", "Nogal cafetero", "Cascarillo", "Teca"]
 
 cantidad = int(input("Ingrese alcantidad de datos a ingresar: "))
 i = 1
 
 while i <= cantidad:
-    diccionario = "{" + f"\"id\":{i}, \"municipio\":\"{municipio[random.randint(1, 124)]}\", \"tipo\":\"{tipoArboles[random.randint(1, 23)]}\", \"cantidad\":{random.randint(1, 500000)}" + "}"
+    diccionario = "{" + f"'municipio':'{municipio[random.randint(0, len(municipio)-1)]}', 'tipo':'{tipoArboles[random.randint(0, len(tipoArboles)-1)]}', 'cantidad':{random.randint(1, 500000)}" + "}"
     
     if cantidad > 1:
         print(diccionario + ",")
