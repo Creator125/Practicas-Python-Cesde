@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,18 +9,21 @@
     <link rel="stylesheet" href="assets/styles/estilos.css">
     <title>Document</title>
 </head>
+
 <body>
     <main class="container-fluid">
         <div class="row">
             <div class="col-12 col-md-4 text-white columnaDashboard">
                 <div class="row">
-                    <div class="col-12 p-5 text-center border">Importar datos <i class="ti ti-database-import"></i></div>
+                    <div class="col-12 p-5 text-center border">Importar datos <i class="ti ti-database-import"></i>
+                    </div>
                 </div>
                 <div class="row">
                     <div class="col-12 p-5 text-center border">Analizar datos <i class="ti ti-clipboard-data"></i></div>
                 </div>
                 <div class="row">
-                    <div class="col-12 p-5 text-center border">Exportar datos <i class="ti ti-database-export"></i></div>
+                    <div class="col-12 p-5 text-center border">Exportar datos <i class="ti ti-database-export"></i>
+                    </div>
                 </div>
             </div>
             <div class="col-12 col-md-8 mt-3 ">
@@ -27,27 +31,27 @@
                     <div class="col">
                         <div class="card h-100 shadow bg-aqua">
                             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                                Eligendi molestias commodi, accusantium, eveniet, 
+                                Eligendi molestias commodi, accusantium, eveniet,
                                 dignissimos labore praesentium adipisci quod quo corrupti
-                                cupiditate tempora. Ea aliquid laborum sapiente, 
+                                cupiditate tempora. Ea aliquid laborum sapiente,
                                 tempora commodi consequuntur est!</p>
                         </div>
                     </div>
                     <div class="col">
                         <div class="card h-100 shadow bg-yellow-orange">
                             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                                Eligendi molestias commodi, accusantium, eveniet, 
+                                Eligendi molestias commodi, accusantium, eveniet,
                                 dignissimos labore praesentium adipisci quod quo corrupti
-                                cupiditate tempora. Ea aliquid laborum sapiente, 
+                                cupiditate tempora. Ea aliquid laborum sapiente,
                                 tempora commodi consequuntur est!</p>
                         </div>
                     </div>
                     <div class="col">
                         <div class="card h-100 shadow bg-lite-green">
                             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                                Eligendi molestias commodi, accusantium, eveniet, 
+                                Eligendi molestias commodi, accusantium, eveniet,
                                 dignissimos labore praesentium adipisci quod quo corrupti
-                                cupiditate tempora. Ea aliquid laborum sapiente, 
+                                cupiditate tempora. Ea aliquid laborum sapiente,
                                 tempora commodi consequuntur est!</p>
                         </div>
                     </div>
@@ -55,60 +59,60 @@
 
                 <div class="row my-2">
                     <div class="col-12 ">
-                        <table class="table table-hover shadow">
-                            <thead>
-                                <tr>
-                                    <th scope="col">#</th>
-                                    <th scope="col">First</th>
-                                    <th scope="col">Last</th>
-                                    <th scope="col">Handle</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <th scope="row">1</th>
-                                    <td>Mark</td>
-                                    <td>Otto</td>
-                                    <td>@mdo</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">2</th>
-                                    <td>Jacob</td>
-                                    <td>Thornton</td>
-                                    <td>@fat</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">3</th>
-                                    <td colspan="2">Larry the Bird</td>
-                                    <td>@twitter</td>
-                                </tr>
-                            </tbody>
-                        </table>
+                        <div class="row my-2">
+                            <div class="col-12">
+                                <h3>Resultados: </h3>
+                                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link active" id="home-tab" data-bs-toggle="tab"
+                                            data-bs-target="#home-tab-pane" type="button" role="tab"
+                                            aria-controls="home-tab-pane" aria-selected="true">Home</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="profile-tab" data-bs-toggle="tab"
+                                            data-bs-target="#profile-tab-pane" type="button" role="tab"
+                                            aria-controls="profile-tab-pane" aria-selected="false">Profile</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="contact-tab" data-bs-toggle="tab"
+                                            data-bs-target="#contact-tab-pane" type="button" role="tab"
+                                            aria-controls="contact-tab-pane" aria-selected="false">Contact</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="disabled-tab" data-bs-toggle="tab"
+                                            data-bs-target="#disabled-tab-pane" type="button" role="tab"
+                                            aria-controls="disabled-tab-pane" aria-selected="false"
+                                            disabled>Disabled</button>
+                                    </li>
+                                </ul>
+                                <div class="tab-content" id="myTabContent">
+                                    <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel"
+                                        aria-labelledby="home-tab" tabindex="0">...</div>
+                                    <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel"
+                                        aria-labelledby="profile-tab" tabindex="0">...</div>
+                                    <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel"
+                                        aria-labelledby="contact-tab" tabindex="0">...</div>
+                                    <div class="tab-pane fade" id="disabled-tab-pane" role="tabpanel"
+                                        aria-labelledby="disabled-tab" tabindex="0">...</div>
+                                </div>
+                                <div class="row justify-content-center">
+                                    <div class="col-12 col-md-3">
+                                        <img src="./assets/img/grafico-ejemplo.png" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="col-12 col-md-3">
+                                        <img src="./assets/img/grafico-ejemplo.png" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="col-12 col-md-3">
+                                        <img src="./assets/img/grafico-ejemplo.png" alt="" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-
-                <div class="col-12 col-md-8 mt-3 ">
-                    <div class="row row-cols-1 row-cols-md-3">
-                        <div class="col">
-                            <div class="card h-100 shadow">
-                                <img src="assets/img/grafico-ejemplo.png" alt="">
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card h-100 shadow">
-                                <img src="assets/img/grafico-ejemplo.png" alt="">
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card h-100 shadow">
-                                <img src="assets/img/grafico-ejemplo.png" alt="">
-                            </div>
-                        </div>
-                    </div>
-            </div>
-        </div>
     </main>
 
     <script src="js/bootstrap.js"></script>
 </body>
+
 </html>
