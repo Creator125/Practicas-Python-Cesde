@@ -9,6 +9,7 @@ def crearTabla(dataframe,nombre):
             <!DOCTYPE html>
             <html>
                 <head>
+                    <meta charset="UTF-8">
                     <title>Tablas</title>
                     <link rel="stylesheet" href="/assets/styles/bootstrap.css">
                 </head>
