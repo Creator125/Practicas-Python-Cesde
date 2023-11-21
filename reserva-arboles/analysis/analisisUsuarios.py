@@ -14,4 +14,20 @@ crearTabla(dataFrameUsuarios,'usuarios')
 filtroUno = dataFrameUsuarios.query("Edad>30")
 print(filtroUno)
 
-#filtroSembradoras = dataFrameUsuarios()
+print("    ")
+
+print("Sembradoras (mujeres) mayores de 40 años y su salario esta entre 1 salario a 2 salarios")
+filtroSembradoras = dataFrameUsuarios.query("(Genero == 'Femenino') and (Edad > 40) and (Salario >= 10003000 or Salario <= 2000600)")
+print(filtroSembradoras)
+
+print("    ")
+
+print("Sembradores menores de 20 años")
+filtroMenores20 = dataFrameUsuarios.query("Edad < 20")
+print(filtroMenores20)
+
+print("    ")
+
+print("Sembradores hombres mayores de 50 años")
+filtroHombresMenores50 =dataFrameUsuarios.query("(Genero == 'Masculino') and (Edad > 50)")
+print(filtroHombresMenores50)

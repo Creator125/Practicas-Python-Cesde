@@ -8,5 +8,3 @@ for _ in range(10):
     precio = random.randint(50, 20000)
     refrigerio = [tipo, nombre, precio]
     refrigerios.append(refrigerio)
-    
-print(refrigerios)
