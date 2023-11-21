@@ -26,14 +26,14 @@ for _ in range(10):
             "Cedro americano", "Cocotero", "Mango", "Caimito", "Heno",
             "Arbol de zope", "Arbol Pulpo", "Capulin", "Higuera", "Ceiba", 
             "Papaya", "Aguacate", "Cedro", "Framboyán", "Arbol del pan", 
-            "Palma canaria", "Jagua", "Yaca", "Marañón", "Samán", 
+            "Palma canaria", "Jagua", "Yaca", "Marañón", "Samán","Ceibas", 
             "Chocho", "Ébano", "Acacia amarilla", "Acacias Roja", 
             "Guayabillo", "Caobas", "Yarumo", "Cámbulo", "Caracolí",
             "Casco de vaca", "Búcaro", "Guayacán amarillo", "Balso", "Guayacán",
             "Guayacán Rosado", "Cerezo de montaña", "Pino colombiano", "Laurel de cera",
             "Arrayán", "Palma de cera", "Aliso", "Roble", "Nogal cafetero", "Cascarillo", "Teca"
             ])
-    cantidad = random.randint(1, 500000)
+    cantidad = random.randint(1, 100)
     presupuesto = random.randint(40000, 100000)
     siembra = [alcadia, tipoArbol, cantidad, presupuesto]
     
