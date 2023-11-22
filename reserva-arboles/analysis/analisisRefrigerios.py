@@ -3,7 +3,7 @@ from helpers.crearCSV import crearCSVRefrigerios
 from helpers.crearHTML import crearTabla
 import pandas as pd
 
-crearCSVRefrigerios(refrigerios, "dbRefrigerios.csv")
+crearCSVRefrigerios(refrigerios, 'dbRefrigerios.csv')
 
 #creando un dataframe desde una fuente CSV
 dataFrameRefrigerios = pd.read_csv('data/dbRefrigerios.csv')

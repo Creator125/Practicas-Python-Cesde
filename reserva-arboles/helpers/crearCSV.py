@@ -7,21 +7,17 @@ def crearCSVUsuarios(lista,nombreArchivo):
         writer.writerows(lista)
 
 def crearCSVRefrigerios(lista, nombreArchivo):
-    with open('data/'+ nombreArchivo, mode='w', newline="",encoding='utf-8') as archivoCSV:
+    with open('data/' + nombreArchivo, mode='w', newline='', encoding='utf-8') as archivoCSV:
         writer = csv.writer(archivoCSV)
         writer.writerow(['Tipo', 'Nombre', 'Precio'])
-        writer.writerow(lista)
-'''
-def crearCSVUsuarios(lista, nombreArchivo):
-    with open("data/"+ nombreArchivo, mode="w", newline="",encoding="utf-8") as archivoCSV:
-        writer = csv.writer(archivoCSV)
-        writer.writerow(["Nombre", "Contraseña", "Edad"])
-        writer.writerow(lista)'''
+        for refrigerio in lista:
+            writer.writerow(refrigerio)
 
         
         
 def crearCSVSiembras(lista, nombreArchivo):
-    with open("data/"+ nombreArchivo, mode="w", newline="",encoding="utf-8") as archivoCSV:
+    with open("data/" + nombreArchivo, mode="w", newline="", encoding="utf-8") as archivoCSV:
         writer = csv.writer(archivoCSV)
         writer.writerow(["Alcadía", "Tipo_arbol", "Cantidad", "Presupuesto"])
-        writer.writerow(lista)
+        for siembra in lista:
+            writer.writerow(siembra)
