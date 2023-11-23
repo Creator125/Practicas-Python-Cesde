@@ -14,7 +14,9 @@ crearTabla(dataFrameUsuarios,'usuarios')
 filtroUno = dataFrameUsuarios.query("Edad>30")
 print(filtroUno)
 
-print("    ")
+print(" ")
+print("-------------- Filtro de Usuarios --------------")
+print(" ")
 
 print("Sembradoras (mujeres) mayores de 40 años y su salario esta entre 1 salario a 2 salarios")
 filtroSembradoras = dataFrameUsuarios.query("(Genero == 'Femenino') and (Edad > 40) and (Salario >= 10003000 or Salario <= 2000600)")

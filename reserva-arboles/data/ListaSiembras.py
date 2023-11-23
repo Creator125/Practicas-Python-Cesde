@@ -35,6 +35,7 @@ for _ in range(10):
             ])
     cantidad = random.randint(1, 100)
     presupuesto = random.randint(40000, 100000)
-    siembra = [alcadia, tipoArbol, cantidad, presupuesto]
+    nSiembras = random.randint(1, 100)
+    siembra = [alcadia, tipoArbol, cantidad, presupuesto, nSiembras]
     
     siembras.append(siembra)

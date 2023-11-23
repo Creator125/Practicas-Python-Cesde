@@ -11,3 +11,18 @@ print(dataFrameRefrigerios)
 
 #convertir el DF en TABLA HTML
 crearTabla(dataFrameRefrigerios,'refrigerios')
+
+#Realizando filtros
+print(" ")
+print("-------------- Filtro de Refrigerios --------------")
+print(" ")
+
+print("Refrigerios cuyo valor unitario sea mayor a 20.000")
+filtroPrecioMayor = dataFrameRefrigerios.query("Precio > 20000")
+print(filtroPrecioMayor)
+
+print(" ")
+
+print("Cantidades de refrigerios menores a 1000")
+filtroCantidad = dataFrameRefrigerios.query("Cantidad < 1000")
+print(filtroCantidad)
