@@ -1,6 +1,7 @@
 from data.ListaUsuarios import usuarios
 from helpers.crearCSV import crearCSVUsuarios
 from helpers.crearHTML import crearTabla
+from helpers.crearPDF import crearPDF
 import pandas as pd
 
 #Usar la funcion crearSCVUsuarios
@@ -9,6 +10,8 @@ crearCSVUsuarios(usuarios, "bdUsuarios.csv")
 dataFrameUsuarios = pd.read_csv('data/bdUsuarios.csv')
 #convertir el DF en TABLA HTML
 crearTabla(dataFrameUsuarios,'usuarios')
+#convertir el DF en PDF
+crearPDF(dataFrameUsuarios, 'usuarios')
 
 #Se filtran los datos
 filtroUno = dataFrameUsuarios.query("Edad>30")

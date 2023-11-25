@@ -11,7 +11,7 @@ def crearTabla(dataframe,nombre):
                 <head>
                     <meta charset="UTF-8">
                     <title>Tablas</title>
-                    <link rel="stylesheet" href="/assets/styles/bootstrap.css">
+                    <link rel="stylesheet" href="../assets/styles/bootstrap.css">
                 </head>
             </html>
         '''

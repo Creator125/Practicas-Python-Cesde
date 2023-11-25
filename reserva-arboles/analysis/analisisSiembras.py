@@ -1,6 +1,7 @@
 from data.ListaSiembras import siembras
 from helpers.crearCSV import crearCSVSiembras
 from helpers.crearHTML import crearTabla
+from helpers.crearPDF import crearPDF
 import pandas as pd
 
 #Usar la funcion crearSCVUsuarios
@@ -11,6 +12,9 @@ dataFrameSiembras = pd.read_csv('data/bdSiembras.csv')
 
 #convertir el DF en TABLA HTML
 crearTabla(dataFrameSiembras,'siembras')
+
+#convertir el DF en PDF
+crearPDF(dataFrameSiembras, 'siembras')
 
 #Creando filtros
 print(" ")
