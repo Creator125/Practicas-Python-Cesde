@@ -88,3 +88,8 @@
 .bg-verde-main{
     background-color: var(--verde-natural);
 }
+
+.iframe-tabla{
+    width: 700px;
+    height: 200px;
+}

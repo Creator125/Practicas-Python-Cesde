@@ -2,7 +2,7 @@ import random
 
 siembras = []
 
-for _ in range(10):
+for _ in range(100):
     alcadia = random.choice([
             "Cáceres", "Caucasia", "El Bagre", "Nechí", "Tarazá", "Zaragoza", "Caracolí", "Maceo",
             "Puerto Berrío", "Puerto Nare", "Puerto Triunfo","Yondó","Amalfi","Anorí", "Cisneros", 

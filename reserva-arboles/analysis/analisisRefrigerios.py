@@ -16,16 +16,12 @@ crearTabla(dataFrameRefrigerios,'refrigerios')
 crearPDF(dataFrameRefrigerios, 'refrigerios')
 
 #Realizando filtros
-print(" ")
-print("-------------- Filtro de Refrigerios --------------")
-print(" ")
+print("Cargando filtro de Refrigerios")
 
-print("Refrigerios cuyo valor unitario sea mayor a 20.000")
+#print("Refrigerios cuyo valor unitario sea mayor a 20.000")
 filtroPrecioMayor = dataFrameRefrigerios.query("Precio > 20000")
-print(filtroPrecioMayor)
+crearTabla(filtroPrecioMayor,'refrigerios_filtro_1')
 
-print(" ")
-
-print("Cantidades de refrigerios menores a 1000")
+#print("Cantidades de refrigerios menores a 1000")
 filtroCantidad = dataFrameRefrigerios.query("Cantidad < 1000")
-print(filtroCantidad)
+crearTabla(filtroCantidad,'refrigerios_filtro_2')

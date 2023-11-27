@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="assets/styles/bootstrap.css">
     <link rel="stylesheet" href="assets/styles/tabler-icons.css">
     <link rel="stylesheet" href="assets/styles/estilos.css">
-    <title>Document</title>
+    <title>Dashboard</title>
 </head>
 
 <body>
@@ -66,46 +66,88 @@
                                     <li class="nav-item" role="presentation">
                                         <button class="nav-link active" id="home-tab" data-bs-toggle="tab"
                                             data-bs-target="#home-tab-pane" type="button" role="tab"
-                                            aria-controls="home-tab-pane" aria-selected="true">Home</button>
+                                            aria-controls="home-tab-pane" aria-selected="true">Usuarios</button>
                                     </li>
                                     <li class="nav-item" role="presentation">
                                         <button class="nav-link" id="profile-tab" data-bs-toggle="tab"
                                             data-bs-target="#profile-tab-pane" type="button" role="tab"
-                                            aria-controls="profile-tab-pane" aria-selected="false">Profile</button>
+                                            aria-controls="profile-tab-pane" aria-selected="false">Refrigerios</button>
                                     </li>
                                     <li class="nav-item" role="presentation">
                                         <button class="nav-link" id="contact-tab" data-bs-toggle="tab"
                                             data-bs-target="#contact-tab-pane" type="button" role="tab"
-                                            aria-controls="contact-tab-pane" aria-selected="false">Contact</button>
-                                    </li>
-                                    <li class="nav-item" role="presentation">
-                                        <button class="nav-link" id="disabled-tab" data-bs-toggle="tab"
-                                            data-bs-target="#disabled-tab-pane" type="button" role="tab"
-                                            aria-controls="disabled-tab-pane" aria-selected="false"
-                                            disabled>Disabled</button>
+                                            aria-controls="contact-tab-pane" aria-selected="false">Siembras</button>
                                     </li>
                                 </ul>
                                 <div class="tab-content" id="myTabContent">
                                     <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel"
-                                        aria-labelledby="home-tab" tabindex="0">...</div>
+                                        aria-labelledby="home-tab" tabindex="0">
+                                        <button class="btn btn-danger">Tabla pdf</button>
+                                        <div>
+                                            <h3>Tablas de usuarios en general</h3>
+                                            <iframe src="tables/usuarios.html" class="iframe-tabla"></iframe>
+                                        </div><br>
+                                        <div>
+                                            <h3>Sembradoras (mujeres) mayores de 40 años y su salario esta entre 1 salario a 2 salarios</h3>
+                                            <iframe src="tables/usuarios_filtro_1.html" frameborder="0" class="iframe-tabla"></iframe>
+                                        </div><br>
+                                        <div>
+                                            <h3>Sembradores menores de 20 años</h3>
+                                            <iframe src="tables/usuarios_filtro_2.html" frameborder="0" class="iframe-tabla"></iframe>
+                                        </div><br>
+                                        <div>
+                                            <h3>Sembradores hombres mayores de 50 años</h3>
+                                            <iframe src="tables/usuarios_filtro_3.html" frameborder="0" class="iframe-tabla"></iframe>
+                                        </div><br>
+                                    </div>
                                     <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel"
-                                        aria-labelledby="profile-tab" tabindex="0">...</div>
+                                        aria-labelledby="profile-tab" tabindex="0">
+                                        <button class="btn btn-danger">Tabla pdf</button>
+                                        <div>
+                                            <h3>Tablas de refrigerios en general</h3>
+                                            <iframe src="tables/refrigerios.html" frameborder="0" class="iframe-tabla"></iframe>
+                                        </div><br>
+                                        <div>
+                                            <h3>Refrigerios cuyo valor unitario sea mayor a 20.000</h3>
+                                            <iframe src="tables/refrigerios_filtro_1.html" frameborder="0" class="iframe-tabla"></iframe>
+                                        </div><br>
+                                        <div>
+                                            <h3>Cantidades de refrigerios menores a 1000</h3>
+                                            <iframe src="tables/refrigerios_filtro_2.html" frameborder="0" class="iframe-tabla"></iframe>
+                                        </div>
+                                    </div>
                                     <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel"
-                                        aria-labelledby="contact-tab" tabindex="0">...</div>
-                                    <div class="tab-pane fade" id="disabled-tab-pane" role="tabpanel"
-                                        aria-labelledby="disabled-tab" tabindex="0">...</div>
+                                        aria-labelledby="contact-tab" tabindex="0" class="iframe-tabla">
+                                        <button class="btn btn-danger">Tabla pdf</button>
+                                        <div>
+                                            <h3>Tablas de siembras en general</h3>
+                                            <iframe src="tables/siembras.html" frameborder="0" class="iframe-tabla"></iframe>
+                                        </div><br>
+                                        <div>
+                                            <h3>Municipios que tenga más de 90 arboles</h3>
+                                            <iframe src="tables/siembras_filtro_1.html" frameborder="0" class="iframe-tabla"></iframe>
+                                        </div><br>
+                                        <div>
+                                            <h3>Municipios cuyo tipo de arbol es ceiba</h3>
+                                            <iframe src="tables/siembras_filtro_2.html" frameborder="0" class="iframe-tabla"></iframe>
+                                        </div>
+                                        <div>
+                                            <h3>Municipios con menos de 10 siembras</h3>
+                                            <iframe src="tables/siembras_filtro_3.html" frameborder="0" class="iframe-tabla"></iframe>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="row justify-content-center">
+                                <!-- <div class="row justify-content-center">
                                     <div class="col-12 col-md-3">
-                                        <img src="./assets/img/grafico-ejemplo.png" alt="" class="img-fluid">
+                                        <img src="../assets/img/grafico-ejemplo.png" alt="" class="img-fluid">
                                     </div>
                                     <div class="col-12 col-md-3">
-                                        <img src="./assets/img/grafico-ejemplo.png" alt="" class="img-fluid">
+                                        <img src="../assets/img/grafico-ejemplo.png" alt="" class="img-fluid">
                                     </div>
                                     <div class="col-12 col-md-3">
-                                        <img src="./assets/img/grafico-ejemplo.png" alt="" class="img-fluid">
+                                        <img src="../assets/img/grafico-ejemplo.png" alt="" class="img-fluid">
                                     </div>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                     </div>
